@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body {background-image: -webkit-linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));}
+.maincont {
+    position: relative;
+    width: 90%;
+    background-color: white;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    padding-top: 95px;
+    text-align: center;
+    
+}
+.img1 {
+    position: absolute;
+    top: -103px;
+    left: 50px;
+    width: 70%;
+    z-index: 1;
+}
+.img2 {
+    position: absolute;
+    left: 50px;
+    top: 0px;
+    width: 70%;
+}
+
+.heading {
+    padding-top: 60px;
+}
+.contbox {
+    width: 85%;
+    margin: auto;
+    text-align: left;
+    padding: 40px 0 65px;
+}
+.box {
+    color: hsl(240, 6%, 50%);
+    position: relative;
+    width: 95%;
+    height: 50px;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    overflow: hidden;
+}
+.box > p {padding: 10px 0;}
+
+.arrow {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+}
+.checkbox {
+    position: absolute;
+    right: -1px;
+    top: 11px;
+    z-index: 3;
+    opacity: 0;
+}
+.checkbox:checked~img{
+    transform: rotate(180deg);
+}
+.expand  {
+    height: auto;
+}
+.fontcolor {color: hsl(238, 29%, 16%); font-weight: bold;}

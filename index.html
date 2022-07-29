@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+  <!-- Local styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <main>
+  <div class="maincont">
+    <img class="img1" src="images/illustration-woman-online-mobile.svg" alt="">
+    <img class="img2" src="images/bg-pattern-mobile.svg" alt="">
+    <h1 class="heading">FAQ</h1>
+    <div class="contbox">
+
+    <div class="box">
+      <p class="Q1">How many team members can I invite?</p>
+      <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
+      team members for the Premium plan.</p>
+      <input type="checkbox" class="checkbox b1">
+      <img src="images/icon-arrow-down.svg" alt="not found" class="arrow">
+    </div>
+    <div class="box">
+      <p class="Q2">What is the maximum file upload size?</p>
+      <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+      <input type="checkbox" class="checkbox b2">
+      <img src="images/icon-arrow-down.svg" alt="not found" class="arrow">
+    </div>
+    <div class="box">
+      <p class="Q3">How do I reset my password?</p>
+      <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+      A reset link will be emailed to you.</p>
+      <input type="checkbox" class="checkbox b3">
+      <img src="images/icon-arrow-down.svg" alt="not found" class="arrow">
+    </div>
+    <div class="box">
+      <p class="Q4">Can I cancel my subscription?</p>
+      <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+      <input type="checkbox" class="checkbox b4">
+      <img src="images/icon-arrow-down.svg" alt="not found" class="arrow">
+    </div>
+ 
+    <div class="box">
+      <p class="Q5">Do you provide additional support?</p>
+      <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+      <input type="checkbox" class="checkbox b5">
+      <img src="images/icon-arrow-down.svg" alt="not found" class="arrow">
+    </div>
+
+  </div>
+ </div>
+
+</main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+    <script>
+      let len = document.querySelectorAll(".checkbox").length;
+        document.querySelector(".b1").addEventListener("click", ()=>{
+        document.querySelectorAll(".box")[len-5].classList.toggle("expand");
+        document.querySelector(".Q1").classList.toggle("fontcolor");
+      });
+      document.querySelector(".b2").addEventListener("click", ()=>{
+        document.querySelectorAll(".box")[len-4].classList.toggle("expand");
+        document.querySelector(".Q2").classList.toggle("fontcolor");
+      });
+      document.querySelector(".b3").addEventListener("click", ()=>{
+        document.querySelectorAll(".box")[len-3].classList.toggle("expand");
+        document.querySelector(".Q3").classList.toggle("fontcolor");
+      });
+      document.querySelector(".b4").addEventListener("click", ()=>{
+        document.querySelectorAll(".box")[len-2].classList.toggle("expand");
+        document.querySelector(".Q4").classList.toggle("fontcolor");
+      });
+      document.querySelector(".b5").addEventListener("click", ()=>{
+        document.querySelectorAll(".box")[len-1].classList.toggle("expand");
+        document.querySelector(".Q5").classList.toggle("fontcolor");
+      });
+      
+      
+    </script>
+
+
+</body>
+</html>
